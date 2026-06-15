@@ -39,4 +39,4 @@ jobs:
           tag_name: ${{ github.ref_name }}
           name: Build ${{ github.ref_name }}
           files: |
-            Output/MP19-7MF-SK6812-EVB_Setup.exe
+            ./Output/MP19-7MF-SK6812-EVB_Setup.exe

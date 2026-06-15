@@ -2,3 +2,4 @@
 ./Output
 *.o
 .env
+./resources.c
