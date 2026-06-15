@@ -8,9 +8,14 @@ This project provides a simple WebSerial-based control interface for the EVB. It
 
 ## Quick Start
 
-You can run this project in two ways:
+You can run this project in three ways:
 
-## Option 1 — Simple HTTP Server (Recommended)
+## Option 1 — Github Pages (Recommended)
+Open your browser, then go to [hyperprobelabs.github.io/MP19-7MF-SK6812-WEBCLI](https://hyperprobelabs.github.io/MP19-7MF-SK6812-WEBCLI/)
+
+> Make sure you are using a WebSerial-compatible browser (Chrome / Edge).
+
+## Option 2 — Simple HTTP Server (local)
 
 Serve the web UI directly from the `./web` directory:
 
@@ -24,7 +29,7 @@ Then open:
 
 > Make sure you are using a WebSerial-compatible browser (Chrome / Edge).
 
-## Option 2 — Prebuilt Installer (Windows x86_64)
+## Option 3 — Prebuilt Installer (Windows x86_64)
 
 If you cannot host the web files manually, use the installer from the Releases page.
 
