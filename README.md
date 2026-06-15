@@ -4,6 +4,8 @@ Web-based client for MP19-7MF-SK6812-EVB development board.
 
 This project provides a simple WebSerial-based control interface for the EVB. It can be served either through a lightweight HTTP server or installed via a prebuilt Windows installer.
 
+![](./images/screenshot-2026-06-15_20-12-55.png)
+
 ## Quick Start
 
 You can run this project in two ways:
@@ -14,11 +16,11 @@ Serve the web UI directly from the `./web` directory:
 
 ```sh
 cd web
-python3 -m http.server 18000
+python3 -m http.server 18080
 ```
 Then open:
 
-`http://localhost:18000`
+`http://localhost:18080`
 
 > Make sure you are using a WebSerial-compatible browser (Chrome / Edge).
 
@@ -47,7 +49,6 @@ If you cannot host the web files manually, use the installer from the Releases p
 
 ```sh
 ./build.sh # Windows: ./build.bat or ./build.ps1
-
 ```
 
 ### Output
@@ -64,7 +65,7 @@ The Windows installer is generated using Inno Setup inside a Docker-based build 
 If you do not trust the prebuilt binary:
 
 - Build from source using the steps above
-- Or inspect the build scripts inside luncher-win_x64
+- Or inspect the build scripts
 
 No code signing certificate is used in the release builds.
 
