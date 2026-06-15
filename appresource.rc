@@ -1,0 +1,35 @@
+#include <windows.h>
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+ FILEFLAGS 0x0L
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_APP
+ FILESUBTYPE VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName",      "HyperPROBE Labs.\0"
+            VALUE "FileDescription",  "MP19-7MF-SK6812-EVB Client - Web UI Server\0"
+            VALUE "FileVersion",      "1.0.0.0\0"
+            VALUE "InternalName",     "hpevbsrv\0"
+            VALUE "LegalCopyright",   "Copyright (C) 2026 HyperPROBE Labs, KaliAssistant. All rights reserved.\0"
+            VALUE "OriginalFilename", "hpevbsrv.exe\0"
+            VALUE "ProductName",      "MP19-7MF-SK6812-EVB Client\0"
+            VALUE "ProductVersion",   "1.0.0.0\0"
+        END
+    END
+
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END
+
+IDI_ICON1 ICON "icon.ico"

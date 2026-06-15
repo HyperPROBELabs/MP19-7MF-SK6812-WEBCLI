@@ -1,0 +1,42 @@
+name: Build & Release
+
+on:
+  push:
+    tags:
+      - "*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install base tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            ca-certificates \
+            git \
+            curl
+
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Mark workspace as safe for git
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
+      - name: Build
+        run: |
+          cd "$GITHUB_WORKSPACE"
+          ./build.sh
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: Build ${{ github.ref_name }}
+          files: |
+            Output/MP19-7MF-SK6812-EVB_Setup.exe
