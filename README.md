@@ -46,8 +46,7 @@ If you cannot host the web files manually, use the installer from the Releases p
 ### Build Steps
 
 ```sh
-cd luncher-win_x64
-make release
+./build.sh # Windows: ./build.bat or ./build.ps1
 
 ```
 
